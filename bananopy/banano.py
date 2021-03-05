@@ -10,7 +10,7 @@ class NodeException(Exception):
     """ Base class for RPC errors """
 
 
-def call(action, params=None, url):
+def call(action, params=None, url=None):
     params = params or {}
     params["action"] = action
     
